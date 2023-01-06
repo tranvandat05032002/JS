@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 20%;
+  margin: 10px 200px;
+  height: 300px;
+}
+.carousel {
+  height: 100%;
+  width: 100%;
+  border: 1px solid orange;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 3px;
+  position: relative;
+}
+.slider {
+  height: 100%;
+  width: 500%;
+  display: flex;
+  flex-shrink: 0;
+  border: 2px solid green;
+  transition: all 0.5s;
+}
+.slider section {
+  display: flex;
+  flex-basis: 20%;
+  flex-shrink: 0;
+  width: 20%;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.arrow {
+  position: absolute;
+  top: 10px;
+  cursor: pointer;
+}
+.next {
+  right: 10px;
+}
+.prev {
+  left: 10px;
+}
